@@ -52,7 +52,8 @@ available until `#run`.
    class LogStash::Inputs::Foo < Logstash::Inputs::Base
      # ...
 
-     def register
+     def run(queue)
+       # ...
        @port_reservation.convert do |addr, port|
          # this block is yielded *after* unbinding from the port,
          # while still holding the global PortManagementSupport lock.
