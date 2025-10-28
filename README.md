@@ -1,4 +1,4 @@
-# ECS Compatibility Support Mixin
+# Port Management Support Mixin
 
 [![Build Status](https://travis-ci.com/logstash-plugins/logstash-mixin-port_management_support.svg?branch=main)](https://travis-ci.com/logstash-plugins/logstash-mixin-port_management_support)
 
