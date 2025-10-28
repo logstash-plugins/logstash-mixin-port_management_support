@@ -1,0 +1,5 @@
+.ci
+*.gem
+Gemfile.lock
+.idea
+.bundle
