@@ -61,6 +61,8 @@ module LogStash
             logger.debug("RESERVED[#{addr}:#{port}]=>[#{@addr}:#{@port}]")
           end
 
+          ObjectSpace.define_finalizer(self, self.class._server_close_proc(@hold))
+
           if block_given?
             begin
               yield(@addr, @port)
@@ -69,8 +71,6 @@ module LogStash
               raise
             end
           end
-
-          ObjectSpace.define_finalizer(self, self.class._server_close_proc(@hold))
         end
 
         ##
