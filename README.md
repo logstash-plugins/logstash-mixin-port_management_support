@@ -22,7 +22,7 @@ available until `#run`.
    that already inherits `LogStash::Plugin`:
 
     ~~~ ruby
-    require 'logstash/plugin_mixins/ecs_compatibility_support'
+    require 'logstash/plugin_mixins/port_management_support'
 
     class LogStash::Inputs::Foo < Logstash::Inputs::Base
       include LogStash::PluginMixins::PortManagementSupport

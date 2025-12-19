@@ -19,10 +19,10 @@ module LogStash
         ##
         # Reserve a port on the provided addr, binding a dummy TCP server to the
         # port to ensure that nothing else can bind to it.
-        # @param addr [String]: the ip address to bind to (default: "0.0.0.0")
+        # @param addr [String]: the ip address to bind to (default: "::", meaning _all_ interfaces)
         # @param port [Integer]: the port to bind to (default: 0 "any")
         # @yieldparam addr [String]: the actual ip address that was bound
-        # @yieldparam port [Integer]: the actual ip address that was bound
+        # @yieldparam port [Integer]: the actual port that was bound
         # @yieldreturn [Void]: the returned value is ignored/discarded
         # @return [Reservation]
         def reserve(addr: '::', port: 0, &handler)
