@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-mixin-port_management_support'
-  s.version       = '1.0.0'
+  s.version       = ::File.read('version').split("\n").first
   s.licenses      = %w(Apache-2.0)
   s.summary       = "Support for port management in Logstash plugins, independent of Logstash version"
   s.description   = "This gem is meant to be a dependency of any Logstash plugin that wishes to manage TCP ports"
