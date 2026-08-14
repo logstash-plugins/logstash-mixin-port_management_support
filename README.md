@@ -1,6 +1,6 @@
 # Port Management Support Mixin
 
-[![Build Status](https://travis-ci.com/logstash-plugins/logstash-mixin-port_management_support.svg?branch=main)](https://travis-ci.com/logstash-plugins/logstash-mixin-port_management_support)
+[![Unit Tests](https://github.com/logstash-plugins/logstash-mixin-port_management_support/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/logstash-plugins/logstash-mixin-port_management_support/actions/workflows/unit-tests.yml)
 
 This gem provides tooling for creating and using port reservations by plugins,
 so that a plugin can ensure a port is available during `#register` and _remains_
